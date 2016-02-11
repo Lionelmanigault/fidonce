@@ -13,8 +13,7 @@
  *= require_tree .
  *= require_self
  */
-@font-face{font-family:'Pirulen';src:url(/assets/pirulen.ttf) format("truetype");font-weight:normal;font-style:normal}
-@font-face{font-family:'Clarendon';src:url(/assets/clarendon.ttf) format("truetype");font-weight:normal;font-style:normal}
+
 
 
 a { 
