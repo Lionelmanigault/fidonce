@@ -1,0 +1,150 @@
+/*/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@font-face{font-family:'Pirulen';src:url(/assets/pirulen.ttf) format("truetype");font-weight:normal;font-style:normal}
+@font-face{font-family:'Clarendon';src:url(/assets/clarendon.ttf) format("truetype");font-weight:normal;font-style:normal}
+
+
+a { 
+   text-decoration: none;
+}
+ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+.container {
+   margin: 0 auto;
+   padding: 20px 50px;
+   background: white;
+}
+#sticky-social {
+   z-index: 9999;
+   left: 0;
+   position: fixed;
+   top: 150px;
+}
+#sticky-social a {
+   background: #333;
+   color: #fff;
+   display: block;
+   height: 35px;
+   font: 16px "Open Sans", sans-serif;
+   line-height: 35px;
+   position: relative;
+   text-align: center;
+   width: 35px;
+}
+#sticky-social a span {
+   line-height: 35px;
+   left: -120px;
+   position: absolute;
+   text-align:center;
+   width:120px;
+}
+#sticky-social a:hover span {
+   left: 100%;
+}
+
+
+#sticky-social a[class*="facebook"] span { background: #3b5998; 
+ 
+  }
+#sticky-social a[class*="facebook"], #sticky-social a[class*="facebook"]:hover {
+    background: #3b5998; 
+    background-position: 50% 50%;
+ background-repeat: no-repeat;
+  background-image:url(http://i61.tinypic.com/201mzb.jpg);
+   background-size: 100% 100%;
+}
+
+
+#sticky-social a[class*="twitter"],
+#sticky-social a[class*="twitter"]:hover { 
+  background-repeat: no-repeat;
+   background: #3b5998; 
+   background-position: 50% 50%;
+    background-image:url(http://i57.tinypic.com/5zjpqf.jpg);
+     background-size: 100% 100%;
+          }
+#sticky-social a[class*="twitter"] span {
+    background: #00aced; 
+}
+
+#sticky-social a[class*="instagrem"],
+#sticky-social a[class*="instagrem"]:hover { background: #517fa4;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+          background-image:url(http://i58.tinypic.com/119ow2e.jpg);
+          background-position: 50% 50%;
+           } 
+
+#sticky-social a[class*="instagrem"] span {
+    background: #517fa4;
+}
+
+@media screen and (max-width: 990px) {
+  #sticky-social {
+   z-index: 9999;
+   left: 0;
+   position: fixed;
+   top: 350px;
+   vertical-align: middle; 
+  }
+#sticky-social a {
+   background: #333;
+   color: #fff;
+   display: block;
+   height: 80px;
+
+   font: 26px "Open Sans", sans-serif;
+   line-height: 35px;
+   position: relative;
+   text-align: center;
+   vertical-align: middle; 
+   width: 80px;
+}
+#sticky-social a span {
+   line-height: 35px;
+    padding-top: 22px;
+   left: -200px;
+   height: 58px;
+   position: absolute;
+   text-align:center;
+    vertical-align: middle; 
+   width:200px;
+}
+    nav {
+      display: none;
+    }
+    .nav2 {
+      display: none;
+    }
+    .nav-links {
+      display: none;
+    }
+    .nav-links2 {
+      display: none;
+    }
+
+     .m-nav {
+      display: block;
+     }
+
+    .bubble-left {
+      float: none;
+    }
+
+}

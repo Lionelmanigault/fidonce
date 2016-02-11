@@ -1,0 +1,33 @@
+<div class="reg-top">
+	<div class="lab-logo"></div>
+</div>
+
+<div class="reg-mid">
+	<p>We keep out schedule full of opportunities to help people with implementing a healthier lifestyle.</p>
+	<p>On the web, login or register today with our MindBodyOnlineSystem.</p>
+	<p>For a better experience on mobile, visit Fidonce in the Mindbody Connect App in the Apple Store or GooglePlay.</p>
+	<p>For more information and details on the classes, please visit our Suit Up and Trainers pages.</p>
+</div>
+
+<div class="reg-bot">
+	
+		<p>Subscribe</p>
+		<%= form_for @subscriber, :html => {:multipart => true}  do |t| %>  
+     
+    
+    
+      <%= t.text_field :fname, placeholder: 'First Name', :class => 'feedback-input', :id => 'comment' %>
+      <%= t.text_field :lname, placeholder: 'Last Name', :class => 'feedback-input', :id => 'comment' %>
+      <%= t.email_field :email, placeholder: 'Your Email', :class => 'feedback-input', :id => 'comment' %>
+
+      	 <div class="submit-fb">
+          <!-- <input type="submit" style="width:100%;" value="SEND" id="button-blue"/> -->
+          <%= t.submit :id => 'button-blue', :value => "Submit" %>
+          <div class="ease"></div>
+      	 
+        </div>
+      <% end %>
+
+
+
+</div>

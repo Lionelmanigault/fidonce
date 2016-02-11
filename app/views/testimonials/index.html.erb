@@ -1,0 +1,58 @@
+<div class="lab-logo"></div>
+
+<div class="test-container">
+	<% if flash[:notice] %>
+    <div class="notice"><%= flash[:notice] %></div>
+  <% end %>
+	<p><u><i>Testimonials</i></u></p>
+
+	<%= form_for @testimonial, :html => {:multipart => true}  do |t| %>  
+     
+    
+      <%= t.text_field :fname, placeholder: 'Your Name', :class => 'feedback-input', :id => 'email' %>
+      <%= t.text_area :feedback, placeholder: 'Tell Us How We\'re Doing! :)', :class => 'feedback-input', :id => 'comment' %>
+
+
+      	 <div class="submit-fb">
+          <!-- <input type="submit" style="width:100%;" value="SEND" id="button-blue"/> -->
+          <%= t.submit :id => 'button-blue', :value => "Submit" %>
+          <div class="ease"></div>
+      	 
+        </div>
+      <% end %>
+
+      <div class="test-list">
+      	<div class="test-list2">
+	      	<% @testimonials.order(created_at: :desc).each do |t| %>
+	      	<div class="review">
+			
+				<p><%= t.feedback %> </p><p> - <%= t.fname %></p> 
+				<% if current_admin %>
+				<p> -<%= link_to 'X', t, :method => :delete, :confirm => "Are you sure?" %></p>
+				<% end %>
+			</div>
+		  	<% end %>
+	 	 </div>
+      </div>
+      
+<script type="text/javascript">
+	$(document).ready(function(){
+    $('#button-blue').attr('disabled',true);
+    $('#email').keyup(function(){
+        if($('#email').val().length !=0)
+            $('#button-blue').attr('disabled', false);
+
+        else
+            $('#button-blue').attr('disabled',true);
+    })
+
+});
+
+
+
+</script>
+	<!-- What if our DNA is just a very complex algorithm capable of learning and writing new code to store in the brain. An artificial intellegence stuck in a biological being that can reproduce and pass down . -->
+
+
+
+</div>

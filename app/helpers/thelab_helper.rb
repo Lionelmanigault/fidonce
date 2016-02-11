@@ -1,0 +1,2 @@
+module ThelabHelper
+end

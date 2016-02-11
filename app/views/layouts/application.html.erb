@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fidonce</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+ 
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,600' rel='stylesheet' type='text/css'>
+
+</head>
+<% if current_admin %>
+<div class="admin-nav"><p>Welcome Admin</p><p><%= link_to 'Mailing List', register_list_path %></p><p>|</p>
+<p><%= link_to 'Sign Out', destroy_admin_session_path, method: :delete %></p>
+  
+</div>
+
+<% end %>
+<body>
+
+
+<aside id="sticky-social">
+    <ul>
+        <li><a href="https://www.facebook.com/FiDonce/" class="entypo-facebook" target="_blank"><span>Facebook</span></a></li>
+        <li><a href="https://www.twitter.com//FiDonce_" class="entypo-twitter" target="_blank"><span>Twitter</span></a></li>
+    
+        <li><a href="https://www.instagram.com/fidonce__/" class="entypo-instagrem" target="_blank"><span>Instagram</span></a></li>
+     
+    </ul>
+</aside>
+
+  <div class="m-nav">
+    <p><%= link_to '', root_path, :class => 'logo-s'  %></p>
+    <p><%= link_to 'REGISTER.', register_index_path, :class => 'btn2'  %></p>
+    <p><%= link_to 'TESTIMONIALS.', testimonials_path, :class => 'btn'  %></p><br><br><br><br><br><br>
+    <p class="mnav-link"><%= link_to 'STORE.', store_index_path  %></p>
+    <p class="mnav-link"><%= link_to 'THE LAB.', thelab_index_path  %></p>
+    <p class="mnav-link"><%= link_to 'TRAINERS.', trainers_path  %></p>
+    <p class="mnav-link"><%= link_to 'SUIT UP.', suitup_index_path  %></p>
+    
+    
+    
+  </div>
+
+
+<nav class="nav">
+<p class="logo-s"><%= link_to '', root_path %></p>
+<p><%= link_to 'SUIT UP.', suitup_index_path  %></p>
+<p><%= link_to 'TRAINERS.', trainers_path  %></p>
+<p><%= link_to 'THE LAB.', thelab_index_path  %></p>
+<p><%= link_to 'STORE.', store_index_path  %></p>
+
+</nav>
+<div class="nav-links">
+		<p><%= link_to 'REGISTER.', register_index_path, :class => 'btn2'  %></p>
+		<p><%= link_to 'TESTIMONIALS.', testimonials_path, :class => 'btn'  %></p>
+	</div>
+
+
+<%= yield %>
+
+<div class="footer">
+<p>©2016 PageCloud Inc Privacy Policy Made with AM'I</p>
+<p class="ami-logo"></p><br>
+<p style="margin-top: 0;">See <u><%= link_to 'Terms&Conditions', terms_index_path %></u> <u><%=link_to 'Privacy Policy', policy_index_path %></u></p>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,181 @@
+// Place all the styles related to the trainers controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.trainer-container {
+	margin-top: 50px;
+	width: 100%;
+	height: 750px;
+
+	.trainer {
+		width: 600px;
+		height: 600px;
+		display: block;
+		background-size: contain;
+	
+		position: absolute;
+		left: 50%;
+		opacity: 0;
+		cursor: pointer;
+		margin-left:-300px;
+		.trainer-bio {
+			p {
+				font-size: 16px;
+				margin-top: 0;
+			}
+			background-color: rgba(17,17,17,0.5);
+			width: 560px;
+			height: 200px;
+			color: #f8f8f8;
+			font-size: 14px;
+			padding: 20px;
+		}
+	}
+	.trainer-select {
+		width: 600px;
+		height: 45px;
+		display: block;
+		margin: auto;
+		position: absolute;
+		color: #f8f8f8;
+		font-size: 30px;
+		top:702px;
+		cursor: pointer;
+		left: 50%;
+		margin-left: -300px;
+		.trainer-select2 {
+			text-align: center;
+			padding-top: 10px;
+			background-color: #fe9f4d;
+			float: left;
+			width: 50%;
+			height: 100%;
+			border-right: 1px solid rgba(0,0,0,0.3);
+		}
+		.trainer-select2:hover {
+			background-color: #ad5101;
+		}
+		.trainer-select3:hover {
+			background-color: #ad5101;
+		}
+		.trainer-select3 {
+			text-align: center;
+			padding-top: 10px;
+			background-color: #fe9f4d;
+			height: 100%;
+			overflow: hidden;
+		}
+	}
+}
+
+#trainer1 {
+	opacity: 1;
+	background-image: url(https://s3.amazonaws.com/fidonce/Overton.jpg);
+}
+#trainer2 {
+	background-image: url(https://s3.amazonaws.com/fidonce/hood.jpg);
+}
+
+/*#trainer1 {
+	opacity: 1;
+	background-image: url(http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Katarina_1.jpg);
+}
+#trainer2 {
+	background-image: url(http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_0.jpg);
+}
+#trainer3 {
+	background-image: url(http://img08.deviantart.net/f13a/i/2014/269/7/5/dragonblade_riven_by_monorirogue-d80kmrv.jpg);
+}
+#trainer4 {
+	background-image: url(http://static.mnium.org/images/contenu/actus/LOL/PBE/5./Nidalee_Splash_73.jpg);
+}*/
+.arrow::selection {
+	    color: #f8f8f8;
+	    background: transparent;
+	}
+.arrow::-moz-selection { /* Code for Firefox */
+	    color: #f8f8f8;
+	    background: transparent;
+	}
+
+.trainer-bio::selection {
+	    color: #f8f8f8;
+	    background: transparent;
+	}
+.trainer-bio::-moz-selection { /* Code for Firefox */
+	    color: #f8f8f8;
+	    background: transparent;
+	}
+
+.arrow {
+	
+	height: 60px;
+	width: 50px;
+	background-color: rgba(17,17,17,0.6);
+	text-align: center;
+	top: 450px;
+	cursor: pointer;
+	color: #f8f8f8;
+	font-size: 46px;
+	position: absolute;
+}
+
+.arrow:active {
+	background-color: rgba(17,17,17,0.3);
+}
+
+.r-arrow {
+	padding-right: 5px;
+	right: 50%;
+	text-align: right;
+	margin-right: -360px;
+}
+.l-arrow {
+	text-align: left;
+	padding-left: 5px;
+	left: 50%;
+	margin-left: -360px;
+}
+
+@media (max-width: 990px){
+	.trainer-container {
+		margin-top: 350px;
+		height: 1000px;
+		.trainer-bio {
+			width: auto !important;
+			height: auto !important;
+			font-size: 27px !important;
+		}
+	}
+
+	.trainer-container .trainer {
+  background-repeat: no-repeat;
+  width: 850px;
+  height: 850px;
+  display: block;
+  background-size: contain;
+   position: absolute; 
+   left: 50%; 
+  opacity: 0;
+  cursor: pointer;
+   margin-left: -425px; 
+  background-position:  50% 50%;
+}
+
+	.trainer-select {
+		 width: 850px !important;
+		  top: 1203px !important;
+
+		  margin-left: -425px !important;
+	}
+	.arrow {
+		top: 800px;
+	}
+	.r-arrow {
+		margin-right:  -460px;
+	}
+	.l-arrow {
+		margin-left: -460px;
+	}
+}

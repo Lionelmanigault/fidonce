@@ -1,0 +1,35 @@
+
+
+
+<div class="mailing-list-con">
+	<p class="list-title">Your Mailing List</p>
+		<p class="list-title hide-name">Hide Name</p>
+		<p style="height: 50px; border-bottom: 1px dashed rgba(0,0,0,0.6); margin-bottom: 0px;">Total: <%= @subscribers.count %> Emails <br><u>Name and Email:</u></p>
+	<div class="list-flow">
+	
+		
+		<div class="list-flow2">
+		<% @subscribers.each do |s| %>
+			<p class="name"><%= s.fname %> <%= s.lname %> - </p>
+			<p><%= s.email %></p>
+			<br>
+		<% end %>
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+$(document).delegate('.hide-name', 'click', function(){
+    $('.name').css("display", "none");
+	$('.hide-name').attr('class', 'show-name list-title').text("Show Name");
+});
+
+$(document).delegate('.show-name', 'click', function(){
+    $('.name').css("display", "inline-block");
+		$('.show-name').attr('class', 'hide-name list-title').text("Hide Name");
+});
+
+	
+
+</script>

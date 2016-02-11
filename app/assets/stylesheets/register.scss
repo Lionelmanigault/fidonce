@@ -1,0 +1,240 @@
+// Place all the styles related to the register controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.reg-mid {
+	max-width: 1000px;
+	display: block;
+	margin: 0 auto 50px auto;
+	p {
+		margin:10px;
+		font-size: 24px;
+	}
+}
+
+.reg-bot {
+	border: 1px solid rgba(0,0,0,0.2);
+	width: 501px;
+	height: 400px;
+	display: block;
+	border-radius: 5px;
+	margin: 50px auto 50px auto;
+
+	p {
+	
+		font-weight: 900;
+		text-align: center;
+		font-size: 34px;
+	}
+	a {
+		display: block;
+		margin: auto;
+		width: 130px;
+		height: 35px;
+		border-radius: 5px;
+		background-color: #f7941e;
+		margin-top: 20px;
+		font-size: 28px;
+		text-align: center;
+		text-decoration: none;
+		padding:10px;
+		border: 1px solid rgba(0,0,0,0.2);
+		-webkit-transition: background 0.5s linear;
+        -moz-transition: background 0.5s linear;
+        -ms-transition: background 0.5s linear;
+        -o-transition: background 0.5s linear;
+        transition: background 0.5s linear;
+		
+
+	}
+	a:hover, a:active, a:visited, a:link {
+		color: black;
+	}
+	a:hover {
+
+	    
+        background-color: black;
+        color: #f7941e;
+	}
+}
+
+/* line 1156, /Users/williamluo/Documents/SITC/app/assets/stylesheets/main.scss */
+textarea {
+  width: 100%;
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+/* line 1162, /Users/williamluo/Documents/SITC/app/assets/stylesheets/main.scss */
+input#email {
+  height: 50px;
+}
+
+/* line 1166, /Users/williamluo/Documents/SITC/app/assets/stylesheets/main.scss */
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+  background-color: white;
+}
+
+.feedback-input {
+  color: #3c3c3c;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 0;
+  line-height: 22px;
+  text-align: center;
+
+  background-color: #fbfbfb;
+
+  margin-bottom: 10px;
+  width: 227px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid rgba(0,0,0,0.2);
+}
+
+.new_subscriber {
+	#comment {
+		height: 50px;
+	}
+	
+}
+
+.submit-fb {
+		margin-top: 20px;
+	}
+	
+.admin-container {
+	margin-bottom: 200px;
+	height: 500px;
+	width: 100%;
+	font-size: 24px;
+	.admin-body {
+		max-width: 600px;
+		padding: 50px;
+		text-align: center;
+		width: auto;
+		display: block;
+		margin: auto;
+		input {
+			width: 100%;
+			height: 50px;
+			text-align: center;
+			font-size: 24px;
+			background-color: #f8f8f8;
+			
+			display: block;
+			margin:0 auto 30px auto;
+
+		}
+		h2 {
+			text-align: right;
+			border-bottom: 2px solid black;
+		}
+	}
+}
+	.list-title {
+		display: inline-block;
+		line-height: 2;
+		float: left;
+		width: 220px;
+		font-size: 24px;
+		border-bottom: 1px solid rgba(0,0,0,0.2);
+	}
+	.list-title:nth-child(2) {
+		float: none;
+		text-align: center;
+		margin-left: 20px;
+		border-radius: 5px;
+		cursor: pointer;
+		border: 1px solid rgba(0,0,0,0.2);
+
+	}
+.admin-nav {
+	position: absolute;
+	top:80px;
+	border-radius: 10px;
+	left: 0;
+	text-align: center;
+	padding:10px;
+	z-index: 9999;
+	background-color: rgba(255,255,255,0.4);
+	p {
+		
+		margin: 0px;
+		margin-bottom: 5px;
+	}
+	p:nth-child(2) {
+		display: inline-block;
+	}
+	p:nth-child(3) {
+		margin-left: 8px;
+		display: inline-block;
+	}
+	p:nth-child(4) {
+		display: inline-block;
+	}
+ }
+
+.mailing-list-con {
+	height: 480px;
+	padding: 0 20px 20px 20px;
+	overflow-y: hidden;
+	width: 100%;
+	max-width: 600px;
+	display: block;
+	margin: 50px auto 50px auto;
+	border: 1px dashed rgba(0,0,0,0.2);
+
+	.list-flow {
+		width: 100%;
+		height: 100%;
+		overflow-y: auto;
+		.list-flow2 {
+
+			p {
+				display: inline-block;
+				margin: 10px 0 0 0;
+			}
+		} 
+	}
+}
+
+.reg-thank {
+	width: 100%;
+	max-width: 600px;
+	display: block;
+	margin: 200px auto 200px auto;
+	text-align: center;
+	h1 {
+		display: inline-block;
+	}
+	h1:first-letter {
+		font-size: 40px;
+		color: #f7941e;
+	}
+}
+
+@media (max-width: 990px) {
+	.reg-mid {
+		p {
+			font-size: 14px;
+			text-align: center;
+		}
+	}
+	.reg-bot {
+		width: 100%;
+		height: auto;
+		margin-bottom: 200px;
+		input#comment {
+			height: 100px;
+			background-size: 80px 80px;
+			font-size: 36px;
+			line-height: 38px;
+		}
+	}
+}

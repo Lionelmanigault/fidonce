@@ -1,0 +1,82 @@
+<div class="trainer-container">
+
+	<div class="trainer" id="trainer1">
+		<div class="trainer-bio">
+		<p><u>CARL OVERTON</u></p>
+		Carl Overton trained professional and general athletes for over 15 years. Some of his clients include NFL/Arena Football lineman Christian Johnson, NBA/ Oversees Players Hakim Warrick and Malik Waynes. Carl is a certified USA Weightlifting coach and First Aid/ CPR/ AED. Carl has been training at Nexxt Level Sports for 9 years and over seen the strength program for 3. Carl believes in making his clients the best athletes they can be. You want to be it; Carl will help you achieve it!</div>
+	</div>
+	<div class="trainer" id="trainer2">
+		<div class="trainer-bio">
+		<p><u>GARRET HOOD</u></p>
+		Garrett Hood has over 10 years of experience as a personal trainer and coach. While attending Texas State he grew a passion for helping others excel in football. In 2011, Garrett started coaching high school football at Willingboro High School in New Jersey and one year later Pennsauken High School. Garrett then became a speed and agility specialist. He has worked with hundreds of clients at both Medford Fitness and Giant Fitness to help them reach their physical and mental goals.</div>
+	</div>
+	<div class="trainer-select">
+		<div class="trainer-select2">CARL OVERTON</div>
+		<div class="trainer-select3">GARRET HOOD</div>
+
+	</div>
+
+	<div class="r-arrow arrow">></div>
+	<div class="l-arrow arrow"><</div>
+</div>
+
+<script type="text/javascript">
+
+
+
+	var count = 1; 
+
+	$(".trainer").click(function(){
+		count++;
+	});
+	$(".r-arrow").click(function(){
+		count++;
+	});
+	$(".l-arrow").click(function(){
+		count--;
+	});
+
+	$('.trainer-select2').click(function(){
+		$('.trainer').css("opacity", "0");
+		$('#trainer1').css("opacity", "1");
+		count = 1;
+	});
+	$('.trainer-select3').click(function(){
+		$('.trainer').css("opacity", "0");
+		$('#trainer2').css("opacity", "1");
+		count = 2;
+	});
+
+
+	$(".arrow, .trainer").click(function(){
+	if (count == 0){
+		$('.trainer').css("opacity", "0");
+		$('#trainer2').css("opacity", "1");
+		count = 2;
+	}else if (count == 1) {
+		$('.trainer').css("opacity", "0");
+		$('#trainer1').css("opacity", "1");
+	}else if (count == 2) {
+		$('.trainer').css("opacity", "0");
+		$('#trainer2').css("opacity", "1");
+	
+	}else if (count == 3) {
+		$('.trainer').css("opacity", "0");
+		$('#trainer1').css("opacity", "1");
+		count = 1;
+	}
+
+	
+
+});
+	
+
+		
+	
+
+</script>
+
+<style type="text/css">
+	
+
+</style>

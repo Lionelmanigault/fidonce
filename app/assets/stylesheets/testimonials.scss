@@ -1,0 +1,184 @@
+// Place all the styles related to the testimonials controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.test-container {
+	height: auto;
+	width: 100%; 
+	max-width: 800px;
+	display: block;
+	margin: auto;
+	margin-bottom: 80px;
+	overflow: hidden;
+	p:nth-child(1) {
+		font-size: 36px;
+		text-align: center;
+	}
+
+}
+
+.test-list {
+	overflow-y: auto;
+	margin-top: 100px;
+	height: 500px;
+		padding: 10px;
+		border-radius: 15px;
+	.test-list2 {
+	
+		height: auto;
+	}
+	.review {
+		text-align: center;
+		margin-top: 10px;
+		p {
+		display: inline-block;
+		font-size: 20px;
+		}
+		.quotes {
+			font-size: 30px;
+		}
+	}
+}
+
+
+.feedback-input {
+	color:#3c3c3c;
+	font-family: Helvetica, Arial, sans-serif;
+    font-weight:500;
+	font-size: 18px;
+	border-radius: 0;
+	line-height: 22px;
+	background-color: #fbfbfb;
+
+	margin-bottom: 10px;
+	width:100%;
+
+  border: 3px solid rgba(0,0,0,0);
+}
+/*
+.feedback-input:focus{
+	background: #fff;
+	box-shadow: 0;
+	border: 3px solid #610071;
+	color: #3498db;
+	outline: none;
+  padding: 13px 13px 13px 54px;
+}
+
+.focused{
+	color:#30aed6;
+	border:#30aed6 solid 3px;
+}
+*/
+/* Icons ---------------------------------- */
+#name{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#name:focus{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 8px 5px;
+  background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email:focus{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+  background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#comment{
+	background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+input#email {
+	height: 50px;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	background-color:white;
+}
+
+#button-blue{
+	font-family: 'Pirulen';
+	float:left;
+	width: 100%;
+	border: #ffffff solid 4px;
+	cursor:pointer;
+	background: linear-gradient(to right, #000000, #000000);
+	color:white;
+	font-size:24px;
+	padding-top:18px;
+	padding-bottom:18px;
+ -moz-transition: all 0.3s ease;
+   -o-transition: all 0.3s ease;
+   -webkit-transition: all 0.3s ease;
+   transition: all 0.3s ease;
+  margin-top:-4px;
+  font-weight:700;
+}
+
+#button-blue:hover{
+	background: linear-gradient(to left, #f7941e , #f7941e);
+	opacity: .5;
+
+}
+
+
+@media screen and (max-width: 990px) {
+  .lab-logo {
+    margin-top: 400px !important;
+  }
+  .test-container {
+    p {
+      font-size: 30px !important;
+    }
+    input#email {
+      height: 100px;
+      line-height: 45px !important;
+      font-size: 44px;
+    }
+    #email {
+      background-position: 11px 50%;
+      background-size: 50px 50px;
+    }
+    #comment {
+      background-position: 11px 11px;
+      background-size: 50px 50px;
+    }
+    textarea#comment {
+      height: 400px;
+      line-height: 45px !important;
+      font-size: 44px !important;
+    }
+  }
+  .review {
+   p{
+   	margin: 5px;
+   }
+  }
+}
