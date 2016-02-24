@@ -421,6 +421,11 @@ color: rgb(70, 63, 77);
 }
 
 @media (max-width: 990px){
+
+	.paths-body p {
+		line-height: 2.5 !important;
+	}
+
 	.icon-logo {
 		width: auto !important; 
 	}
