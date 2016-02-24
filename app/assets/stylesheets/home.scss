@@ -261,7 +261,7 @@ nav {
 
 		.icon-logo{
 		height: 250px;
-		
+		width: 170px;
 	
 		background-repeat: no-repeat;
 		background-size: contain;
@@ -291,15 +291,16 @@ nav {
 	position: relative;
 	height: 525px;
 	
-	.paths-left {
+	p {
+		line-height: 2;
 		display: block;
 		text-align: center;
 		color: #f8f8f8;
 		font-weight: 900;
 		width: 830px;
-		height: 300px;
-		font-size: 46px;
-		margin: 150px auto 0 auto;
+/*		height: 300px;*/
+		font-size: 30px;
+		margin: 0px auto 0 auto;
 		text-shadow: rgb(0, 0, 0) 0px 0px 5px;
 	}
 }
@@ -420,6 +421,9 @@ color: rgb(70, 63, 77);
 }
 
 @media (max-width: 990px){
+	.icon-logo {
+		width: auto !important; 
+	}
 	.nav-links {
 		display: none !important;
 	}
@@ -484,6 +488,7 @@ color: rgb(70, 63, 77);
 		.step-div {
 			float: none;
 			width: 100%;
+
 			display: block;
 			margin: auto;
 			margin-bottom: 10px !important;
